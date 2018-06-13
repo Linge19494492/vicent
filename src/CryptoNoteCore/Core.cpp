@@ -1117,7 +1117,7 @@ bool Core::getBlockTemplate(BlockTemplate& b, const AccountPublicAddress& adr, c
       // node-cryptonote-util's code is so old that only works with majorVersion set to 1
       // and when constructing the block template it uses majorVersion parent as version
       // this makes it incompatible with auto upgrade in the mining tools like xmr-star
-      // bbs's own fork of check minorVersion to determine whether it is parent block
+      // vicen's own fork of check minorVersion to determine whether it is parent block
       // in this way we can bypass the issue
       b.parentBlock.minorVersion = 1;
     } else {

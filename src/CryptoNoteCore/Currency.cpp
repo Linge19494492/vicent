@@ -95,7 +95,7 @@ bool Currency::generateGenesisBlock() {
   //std::string hex_tx_represent = Common::toHex(txb);
 
   // Hard code coinbase tx in genesis block, because through generating tx use random, but genesis should be always the same
-  std::string genesisCoinbaseTxHex = "013c01ff0001ffffffffffff0f029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd08807121016f12542229a3073b548dd54a3f66cfa3fc46467687d68b03ace931c21ccbb820";
+  std::string genesisCoinbaseTxHex = "013c01ff0001ffffffffffff0f029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd08807121010505d5209f06de0264e9f1dae66a620294eb5163336ebda4c5866dc3f1c262d7";
   BinaryArray minerTxBlob;
 
   bool r =
@@ -533,7 +533,7 @@ Difficulty Currency::nextDifficultyV2_V3(
   assert(n <= N + 1);
 
   // If new coin, just "give away" first 5 blocks at low difficulty
-  if ( n < 6 ) { return  1; }
+  if ( n < 20000 ) { return  1; }
   // If height "n" is from 6 to N, then reset N to n-1.
   else if (n < N + 1) { N = n - 1; }
 

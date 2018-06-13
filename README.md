@@ -1,17 +1,17 @@
-![BBSCoin](https://github.com/bbscoin/bbscoin/blob/master/logos/bbscoin.png "BBSCoin")
+![vicenCoin](https://github.com/vicencoin/vicencoin/blob/master/logos/vicencoin.png "vicenCoin")
 
-# BBSCoin(BBS)
+# vicenCoin(vicen)
 
 This repo contains daemons for blockchain, payment and wallet service.
 
-## Building BBSCoin 
+## Building vicenCoin 
 
 ### On Ubuntu 16.04/18.04
 
 ```
 sudo apt-get install build-essential libboost-all-dev git cmake
-git clone https://github.com/bbscoin/bbscoin.git
-cd bbscoin
+git clone https://github.com/vicencoin/vicencoin.git
+cd vicencoin
 make
 ```
 
@@ -27,8 +27,8 @@ cd boost_1_66_0
 ./bootstrap.sh
 ./b2 install
 cd ..
-git clone https://github.com/bbscoin/bbscoin.git
-cd bbscoin
+git clone https://github.com/vicencoin/vicencoin.git
+cd vicencoin
 make
 ```
 
@@ -69,8 +69,8 @@ Good luck!
 brew update
 brew install cmake
 brew install boost
-git clone https://github.com/bbscoin/bbscoin.git
-cd bbscoin
+git clone https://github.com/vicencoin/vicencoin.git
+cd vicencoin
 make
 ```
 The resulting executables can be found in `build/release/src`.
@@ -83,6 +83,6 @@ The resulting executables can be found in `build/release/src`.
 * Building with Clang: it may be possible to use Clang instead of GCC, but this may not work everywhere. To build, run `export CC=clang CXX=clang++` before running `make`.
 
 ## Donate
-BBS: <br>fySNLTUCovtbYGcFMh4e4gcyJ2HZEFDhq9x4Qba3NSatcK87Q7HPM73LCHxydBRTsv8MKk7CPtNRbGmbr3n7DfBi2y6zTTyAv <br><br>
+vicen: <br>fySNLTUCovtbYGcFMh4e4gcyJ2HZEFDhq9x4Qba3NSatcK87Q7HPM73LCHxydBRTsv8MKk7CPtNRbGmbr3n7DfBi2y6zTTyAv <br><br>
 BTC: <br>1Kpqk3BTzFCvyuBZDTbe5Y8o24VA1AQ5Km <br><br>
 ETH: <br>0x29da788fb4a162e97d64cc0ec1817af35fe14ad1 <br><br>
